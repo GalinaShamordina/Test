@@ -12,7 +12,7 @@ def circular_array_path(n, m):
     if m == 0:
         return "m must be greater than 0"
     while True:
-        end_index = (start_index + m -1) % n
+        end_index = (start_index + m - 1) % n
         path.append(circular_array[start_index])
         if end_index == 0:
             break
